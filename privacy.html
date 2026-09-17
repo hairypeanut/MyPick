@@ -1,249 +1,431 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
-  <meta name="description" content="MyPick Privacy Policy">
-  <title>Privacy Policy — MyPick</title>
-  <style>
-    :root {
-      --bg: #050914;
-      --panel: #0c1424;
-      --panel-2: #111d31;
-      --text: #f7f9ff;
-      --muted: #aeb9cc;
-      --line: rgba(99, 218, 255, 0.28);
-      --accent: #69e7ff;
-      --accent-2: #9b7cff;
-      --link: #8eeeff;
-      --max: 860px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * { box-sizing: border-box; }
+    <title>MyPick Privacy Policy</title>
 
-    html { scroll-behavior: smooth; }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-      margin: 0;
-      min-height: 100%;
-      background:
-        radial-gradient(circle at 15% -10%, rgba(56, 189, 248, 0.18), transparent 32rem),
-        radial-gradient(circle at 95% 0%, rgba(139, 92, 246, 0.16), transparent 30rem),
-        var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-                   "Segoe UI", system-ui, sans-serif;
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            background: #07111f;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+        }
 
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 24px 70px;
+        }
 
-    a:hover { text-decoration: underline; }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
 
-    .wrap {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
-      padding: 48px 0 72px;
-    }
+        .logo {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 20px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, #00d9ff, #7b61ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            box-shadow: 0 0 32px rgba(0, 217, 255, 0.28);
+        }
 
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      font-size: 1.2rem;
-      margin-bottom: 28px;
-    }
+        h1 {
+            margin: 0;
+            font-size: 38px;
+            letter-spacing: -1px;
+        }
 
-    .brand-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 0 16px rgba(105, 231, 255, .75);
-    }
+        .subtitle {
+            margin-top: 8px;
+            color: #9fb2c8;
+            font-size: 17px;
+        }
 
-    .hero {
-      background: linear-gradient(180deg, rgba(17,29,49,.96), rgba(12,20,36,.96));
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: clamp(28px, 6vw, 48px);
-      box-shadow:
-        0 0 0 1px rgba(155,124,255,.06) inset,
-        0 18px 60px rgba(0,0,0,.28),
-        0 0 34px rgba(58, 186, 255, .08);
-      margin-bottom: 24px;
-    }
+        .updated {
+            margin-top: 12px;
+            color: #71869d;
+            font-size: 14px;
+        }
 
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2.2rem, 7vw, 4.2rem);
-      line-height: 1.02;
-      letter-spacing: -0.05em;
-    }
+        .card {
+            background: #0d1b2b;
+            border: 1px solid #1b3148;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 22px;
+        }
 
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin: 0;
-    }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 14px;
+            font-size: 22px;
+            color: #ffffff;
+        }
 
-    .meta {
-      margin-top: 20px;
-      display: inline-block;
-      color: #d9e2f2;
-      font-size: .92rem;
-      padding: 8px 12px;
-      border: 1px solid rgba(255,255,255,.09);
-      background: rgba(255,255,255,.035);
-      border-radius: 999px;
-    }
+        p {
+            margin: 0 0 14px;
+            color: #d7e0ea;
+        }
 
-    .card {
-      background: rgba(12,20,36,.92);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 22px;
-      padding: clamp(22px, 5vw, 34px);
-      margin: 16px 0;
-    }
+        p:last-child {
+            margin-bottom: 0;
+        }
 
-    h2 {
-      margin: 0 0 12px;
-      font-size: 1.35rem;
-      letter-spacing: -0.02em;
-    }
+        ul {
+            margin: 12px 0 0;
+            padding-left: 22px;
+            color: #d7e0ea;
+        }
 
-    h3 {
-      margin: 22px 0 8px;
-      font-size: 1.05rem;
-    }
+        li {
+            margin-bottom: 8px;
+        }
 
-    p { margin: 10px 0; }
+        strong {
+            color: #ffffff;
+        }
 
-    ul {
-      margin: 12px 0;
-      padding-left: 1.25rem;
-    }
+        a {
+            color: #43d8ff;
+            text-decoration: none;
+        }
 
-    li { margin: 8px 0; }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    .note {
-      border-left: 3px solid var(--accent);
-      padding: 12px 16px;
-      margin: 18px 0;
-      background: rgba(105,231,255,.045);
-      border-radius: 0 14px 14px 0;
-      color: #dce7f7;
-    }
+        .highlight {
+            color: #43d8ff;
+            font-weight: 600;
+        }
 
-    .legal-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: .95rem;
-    }
+        .footer {
+            text-align: center;
+            color: #71869d;
+            font-size: 14px;
+            margin-top: 42px;
+        }
 
-    footer {
-      text-align: center;
-      color: #7f8ba0;
-      font-size: .85rem;
-      padding-top: 28px;
-    }
+        .footer strong {
+            color: #9fb2c8;
+        }
 
-    .placeholder {
-      color: #ffd28b;
-      font-weight: 700;
-    }
+        @media (max-width: 600px) {
+            .container {
+                padding: 32px 16px 50px;
+            }
 
-    @media (max-width: 520px) {
-      .wrap { width: min(calc(100% - 22px), var(--max)); padding-top: 24px; }
-      .hero { border-radius: 22px; }
-      .card { border-radius: 18px; }
-    }
-</style>
+            h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <main class="wrap">
-    <div class="brand"><span class="brand-dot" aria-hidden="true"></span>MyPick</div>
 
-    <section class="hero">
-      <h1>Privacy Policy</h1>
-      <p class="subtitle">A simple privacy policy for a simple idea: play together, without giving us your personal data.</p>
-      <div class="meta">Effective date: 7 September 2026</div>
+<div class="container">
+
+    <header class="header">
+        <div class="logo">⚡</div>
+        <h1>MyPick</h1>
+        <div class="subtitle">Privacy Policy</div>
+        <div class="updated">Last updated: 17 September 2026</div>
+    </header>
+
+    <section class="card">
+        <h2>Our Approach to Privacy</h2>
+
+        <p>
+            MyPick is designed to be a simple, fun game for friends,
+            families and groups. We keep data collection to the minimum
+            necessary to provide the app's features.
+        </p>
+
+        <p>
+            MyPick does not require you to create an account and does not
+            use advertising, advertising tracking or analytics services.
+        </p>
     </section>
 
     <section class="card">
-      <h2>1. Overview</h2>
-      <p>MyPick is designed as a local party and arcade game. In the current version of the app, you do not need to create an account, sign in, or provide personal information to us in order to play.</p>
-      <p>We do not sell your personal information. We do not use third-party advertising SDKs, and we do not use the app to track you across other companies' apps or websites.</p>
+        <h2>Information MyPick Uses</h2>
+
+        <p>
+            Most MyPick gameplay takes place directly on your device.
+            Game selections, touch interactions and other normal gameplay
+            information are not sent to us.
+        </p>
+
+        <p>
+            Games that produce a leaderboard score use both a
+            <strong>Local Leaderboard</strong> and a
+            <strong>Global Leaderboard</strong>.
+        </p>
     </section>
 
     <section class="card">
-      <h2>2. Information stored on your device</h2>
-      <p>Some information may be stored locally on your device so the app can remember your preferences and scores. This may include:</p>
-      <ul>
-        <li>game settings and visual theme preferences;</li>
-        <li>local high scores and leaderboard entries;</li>
-        <li>a name or nickname you choose to enter for a local leaderboard.</li>
-      </ul>
-      <p>This information is stored locally by the app and, in the current version, is not intentionally transmitted to us.</p>
+        <h2>Local Leaderboards</h2>
+
+        <p>
+            Local leaderboard information is stored on your device.
+            It is used to display your local scores and rankings within
+            MyPick.
+        </p>
+
+        <p>
+            Local leaderboard information remains on your device unless
+            the same qualifying score is also submitted to the Global
+            Leaderboard as described below.
+        </p>
     </section>
 
     <section class="card">
-      <h2>3. Data we collect</h2>
-      <p>MyPick does not currently operate a user account system, cloud leaderboard, advertising platform, or developer-run analytics service.</p>
-      <p>Accordingly, we do not intentionally collect names, email addresses, precise location, contacts, photos, payment information, or gameplay history on our own servers through the current version of MyPick.</p>
+        <h2>Global Leaderboards</h2>
+
+        <p>
+            When you record a qualifying score in a MyPick game that
+            supports leaderboards, MyPick automatically submits that
+            leaderboard result to the Global Leaderboard.
+        </p>
+
+        <p>
+            The information submitted is limited to:
+        </p>
+
+        <ul>
+            <li>Your leaderboard display name</li>
+            <li>The game identifier</li>
+            <li>Your score or reaction time</li>
+            <li>The date and time the leaderboard result was submitted</li>
+        </ul>
+
+        <p>
+            If you do not enter a leaderboard name, the result is submitted
+            and displayed using <strong>“No Name”</strong>.
+        </p>
+
+        <p>
+            Do not use your leaderboard name to share information that you
+            do not want other MyPick users to see.
+        </p>
     </section>
 
     <section class="card">
-      <h2>4. Apple and device services</h2>
-      <p>Your use of MyPick takes place on an Apple device and may involve services provided by Apple, including the App Store, iOS, crash diagnostics, or other device-level services that you have enabled. Information handled by Apple is subject to Apple's own privacy policies and settings.</p>
-      <p>MyPick does not control Apple's independent collection or processing of that information.</p>
+        <h2>Public Leaderboard Information</h2>
+
+        <p>
+            Global Leaderboards are a public feature within MyPick.
+            Leaderboard display names and qualifying scores may be visible
+            to other people using the app.
+        </p>
+
+        <p>
+            MyPick does not require your real name. You may use a nickname
+            or leave the name blank, in which case
+            <strong>“No Name”</strong> will be displayed.
+        </p>
     </section>
 
     <section class="card">
-      <h2>5. Children</h2>
-      <p>MyPick does not require an account and is not designed to collect personal information from children. Users should avoid entering sensitive personal information into local leaderboard name fields. A nickname or first name is sufficient.</p>
+        <h2>Firebase and Cloud Firestore</h2>
+
+        <p>
+            MyPick uses <strong>Google Firebase Cloud Firestore</strong>
+            to operate its Global Leaderboards.
+        </p>
+
+        <p>
+            The leaderboard information described above is transmitted to
+            and stored using Google's Firebase infrastructure so that
+            Global Leaderboard results can be displayed across devices.
+        </p>
+
+        <p>
+            MyPick does not use Firebase Analytics, Firebase Authentication
+            or Firebase Advertising features.
+        </p>
+
+        <p>
+            You can learn more about Google's privacy practices at:
+            <a href="https://policies.google.com/privacy"
+               target="_blank"
+               rel="noopener noreferrer">
+                Google Privacy Policy
+            </a>.
+        </p>
     </section>
 
     <section class="card">
-      <h2>6. External links</h2>
-      <p>The app or this website may contain links to third-party services, including Apple. Once you follow an external link, the privacy practices of that third party apply.</p>
+        <h2>What We Do Not Collect</h2>
+
+        <p>
+            MyPick does not intentionally collect:
+        </p>
+
+        <ul>
+            <li>Your email address</li>
+            <li>Your phone number</li>
+            <li>Your postal address</li>
+            <li>Your contacts</li>
+            <li>Your precise location</li>
+            <li>Your photos or videos</li>
+            <li>Health information</li>
+            <li>Payment or financial information</li>
+            <li>Advertising identifiers for tracking</li>
+        </ul>
+
+        <p>
+            MyPick does not require an account or social-media login.
+        </p>
     </section>
 
     <section class="card">
-      <h2>7. Data retention and deletion</h2>
-      <p>Local settings and leaderboard information remain on the device until they are reset within the app, removed by deleting the app, or otherwise cleared by the operating system or user.</p>
-      <p>Because the current version does not intentionally send this information to our servers, we generally do not hold a server-side copy to delete.</p>
+        <h2>Advertising and Tracking</h2>
+
+        <p>
+            MyPick contains no third-party advertising.
+        </p>
+
+        <p>
+            We do not use your MyPick activity to track you across apps
+            or websites owned by other companies, and we do not sell your
+            personal information to advertisers.
+        </p>
     </section>
 
     <section class="card">
-      <h2>8. Changes to this policy</h2>
-      <p>We may update this Privacy Policy if MyPick changes, for example if a future version introduces online services, analytics, accounts, or cloud leaderboards. If we make material changes, we will update this page and its effective date.</p>
+        <h2>How Leaderboard Information Is Used</h2>
+
+        <p>
+            Global Leaderboard information is used only to provide and
+            operate MyPick's leaderboard features, including displaying
+            scores and rankings to MyPick users.
+        </p>
+
+        <p>
+            We do not use leaderboard information for advertising or
+            marketing profiling.
+        </p>
     </section>
 
     <section class="card">
-      <h2>9. Contact</h2>
-      <p>If you have a privacy question about MyPick, contact:</p>
-      <p class="placeholder">hairypeanut@mail.com</p>
-  
+        <h2>Data Retention</h2>
 
-      <nav class="legal-nav" aria-label="Legal">
-        <a href="privacy.html" aria-current="page">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a>
-      </nav>
+        <p>
+            Global Leaderboard entries may remain stored in Cloud Firestore
+            so that leaderboard rankings can continue to operate.
+        </p>
+
+        <p>
+            Local leaderboard information can be reset using the controls
+            provided within MyPick. Resetting a Local Leaderboard does not
+            automatically delete an entry that has already been submitted
+            to the Global Leaderboard.
+        </p>
     </section>
 
-    <footer>© 2026 MyPick. All rights reserved.</footer>
-  </main>
+    <section class="card">
+        <h2>Removing a Global Leaderboard Entry</h2>
+
+        <p>
+            If you would like a Global Leaderboard entry removed, please
+            contact us using the support contact details below.
+        </p>
+
+        <p>
+            Please provide enough information for us to identify the entry,
+            such as the leaderboard display name, game and approximate
+            score or reaction time.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Children's Privacy</h2>
+
+        <p>
+            MyPick is designed as a general-audience game and does not
+            require users to create accounts or provide their real names.
+        </p>
+
+        <p>
+            Users should avoid entering personal or sensitive information
+            as a Global Leaderboard display name.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Security</h2>
+
+        <p>
+            We take reasonable measures to limit the information collected
+            by MyPick and to protect information used by the Global
+            Leaderboard.
+        </p>
+
+        <p>
+            Access to MyPick's Cloud Firestore database is controlled using
+            database security rules designed to restrict the information
+            that the app can read and submit.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy if MyPick's features or data
+            practices change. The latest version will be published on this
+            page and the “Last updated” date will be changed accordingly.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Contact &amp; Support</h2>
+
+        <p>
+            If you have a question about this Privacy Policy, MyPick's
+            privacy practices, or would like to request removal of a
+            Global Leaderboard entry, please contact:
+        </p>
+
+        <p>
+            <strong>Andy Sadler</strong><br>
+            MyPick Developer<br>
+            Email:
+            <a href="mailto:YOUR_SUPPORT_EMAIL">
+                YOUR_SUPPORT_EMAIL
+            </a>
+        </p>
+    </section>
+
+    <div class="footer">
+        <strong>MyPick</strong><br>
+        Put your finger on it.<br><br>
+        © 2026 Andy Sadler. All rights reserved.
+    </div>
+
+</div>
+
 </body>
 </html>
